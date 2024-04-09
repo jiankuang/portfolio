@@ -1,0 +1,94 @@
+.section-featured {
+    background-image: url(../img/fem-feature-bottom.png),
+    url(../img/fem-feature-bkgd.png);
+    background-repeat: repeat-x, repeat;
+    background-position: bottom center, center center;
+    padding: 6rem 0;
+}
+.project {
+    background-image: 
+    url(../img/fem-feature-bkgd.png);
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 6rem 0;
+}
+
+
+.section-featured h2 {
+    font-size: var(--h3);
+}
+
+.section-featured h3 {
+    margin: 3rem 0 0 0;
+    padding: 1rem 1rem 0 1rem;
+    color: var(--white);
+    font-size: var(--h4);
+    background-color: var(--black);
+}
+.blackbox {
+    padding: 0rem 1rem 1rem 1rem;
+    color: white;
+    background-color: var(--black);
+    border-radius: 0;
+}
+.section-featured article {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.section-featured img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: block;
+    margin-top: 2rem;
+}
+.section-featured ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--mono);
+    text-transform: uppercase;
+    font-size: var(--small);
+    grid-row: 2/3;
+    margin-top: -1.75rem;
+}
+
+.section-featured li {
+    background-color: var(--white);
+    padding: 0.5rem;
+    border: 2px solid var(--red);
+}
+.youtube {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+
+@media (max-width: 475px) {
+    .section-featured h2 {
+    font-size: var(--h4);
+    }
+}
+@media (max-width: 400px) {
+    .section-featured h2 {
+    font-size: var(--h5);
+    }
+    .section-featured h3 {
+    font-size: var(--h5);
+    }
+    .section-featured ul {
+    background-color: var(--white);
+    padding: 0.5rem;
+    border: 2px solid var(--red);
+    }
+    .section-featured li {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    }
+}

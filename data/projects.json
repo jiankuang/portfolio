@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "AWS Support Center",
+        "image": "aws-supportcenter.png",
+        "url": "https://support.console.aws.amazon.com/support/home",
+        "technologies": ["JavaScript", "React", "Redux", "Cypress", "Java"],
+        "description": "AWS Support is one-on-one, fast-response support from experienced technical support engineers. The service helps customers use AWS's products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments.",
+        "details": "The landing page is where customers first land in Support Center. The create case page is where customers create supoprt cases. The case history page is where customers view previously created cases. The case details page is where customers view case correspondence and reply to support engineers. The chat window is where customers chat with support engineers.",
+        "accomplishments": [
+            "Developed and maintained AWS Console - Support Center web platform, mainly for customers to submit and manage support cases.",
+            "Designed and Implemented Support Center migration from Airwolf (deprecated AWS internal UI framework) to React + Redux + Saga.",
+            "Migrated Support Center integration tests from Selenium to Cypress + WebdriverIO, and unblocked our pipelines for fast CICD.",
+            "Addressed all Accessibility issues on the Support Center website, to provide a better user experience for people with disabilities."
+        ]
+        
+    },
+    {
+        "id": 2,
+        "name": "Amazon Homepage Desktop",
+        "image": "amazon-homepage-desktop.png",
+        "url": "https://www.amazon.com/",
+        "technologies": ["JavaScript", "Jest", "Rollup", "Java"]
+    },
+    {
+        "id": 3,
+        "name": "Amazon Homepage Mobile",
+        "image": "amazon-homepage-mobile.png",
+        "url": "https://www.amazon.com/",
+        "technologies": ["JavaScript", "Jest", "Rollup", "Java"]
+    },
+    {
+        "id": 4,
+        "name": "Awesome Portfolio",
+        "image": "jian-portfolio.png",
+        "url": "http://awesomeportfolio.click/",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+    }
+]

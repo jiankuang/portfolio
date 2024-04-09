@@ -1,0 +1,151 @@
+.section-projects {
+    background-color: var(--black);
+    padding: 6rem 0 4rem 0;
+    color: var(--white);
+}
+a[name="projects"] {
+    color: var(--white);
+}
+figure {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+}
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+figure a {
+    color: var(--white);
+    text-decoration: none;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+figure a:hover {
+    color: var(--green);
+}
+figcaption {
+    background-color: var(--black);
+    opacity: 0.8;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+figcaption h3 {
+    margin-bottom: 0;
+    font-size: var(--h5);
+}
+figcaption ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    font-family: var(--mono);
+    text-transform: uppercase;
+    font-size: var(--small);
+}
+figcaption li {
+    display: inline-block;
+}
+.topgrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+.topgrid figure:first-child {
+    grid-row: span 2;
+}
+.bottomgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project figure {
+    display: block;
+}
+.project figcaption {
+    background-color: transparent;
+    color: var(--black);
+    text-align: left;
+}
+figure.featured-screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+.section-featured .featured-screenshots img {
+    grid-column: revert;
+    grid-row: revert;
+}
+.featured-screenshots figcaption {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.featured-screenshots figcaption p {
+    columns: 2;
+    margin-bottom: 5rem;
+}
+.featured-image {
+    display: block;
+    margin: 5rem 0; 
+}
+figure.figure-portfolio {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 2rem;
+}
+.figure-portfolio img {
+    margin-top: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.figure-portfolio figcaption {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+@media (max-width: 992px) {
+    .topgrid {
+    display: block;
+    }
+    .topgrid figure {
+            margin-bottom: 4rem;
+    }
+    .bottomgrid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 6rem 2rem;
+    }
+    .bottomgrid > * {
+    flex-basis: 30%;
+    }
+    .bottomgrid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media (max-width: 667px) {
+    .bottomgrid {
+    gap: 2rem;
+    }
+    .bottomgrid a {
+    flex-basis: 80%;
+    }
+    .topgrid figure {
+    margin-bottom: 2rem;
+    }
+    .section-projects h2 {
+    font-size: var(--h5);
+    }
+    figcaption h3 {
+    font-size: var(--base-size);
+    }
+}

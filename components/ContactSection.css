@@ -1,0 +1,13 @@
+.section-contact {
+    text-align: center;
+    padding: 6rem 0;
+    background: var(--black)
+    url("../img/fem-aurora.jpg") center center;
+    color: var(--white);
+}
+a[name="contact"] {
+    color: var(--white);
+}
+.section-contact p:last-child {
+    margin-top: 3rem;
+}

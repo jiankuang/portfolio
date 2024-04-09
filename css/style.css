@@ -476,7 +476,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
   }
-  .topgrid figure:first-child {
+  .topgrid project-item:first-child {
     grid-row: span 2;
   }
   .bottomgrid {
@@ -539,7 +539,7 @@
       display: block;
     }
     .topgrid figure {
-            margin-bottom: 4rem;
+      margin-bottom: 4rem;
     }
     .bottomgrid {
       display: flex;
